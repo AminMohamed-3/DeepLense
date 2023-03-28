@@ -50,7 +50,7 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
 3. Removed batch normalization following the findings of the follow up architecture **“ESRGAN”**[^2] that BN layers produce visible artifacts in the upscaled image. and found significant improvements in the resulting upscaled images and corresponding PNSR and SSIM metrics.
 
-4. Increased the number of **Residual Blocks**, that resulted in a minor improvement with no real damage to the training time.
+4. Changed the LeakyReLU activation function to **PReLU** activation function, which resulted in a minor improvement in the validation metrics.
 
 5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of 0.1 if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
 
@@ -58,7 +58,7 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 The dataset comprises strong lensing images with no substructure at multiple resolutions: high-resolution (HR) and low-resolution (LR).
 
 ### **Solution**:
-The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1808FO26tvAnXkkVM6XBidHiNHE73yiML?usp=sharing)
+The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1UOhPnVv-YDzBvhI5va-PipOj3BV9LHMT?usp=sharing)
 
 
 ### **Model Weights**: [superres.pth](/weights/superres.pth)
@@ -66,9 +66,9 @@ The notebook can be open on [GoogleColab](https://colab.research.google.com/driv
 ### **Results**:
 | S.No | Metric          | Value    |
 | ---- | --------------- | -------- |
-| 1.   | Validation MSE  | 0.00006  |
-| 2.   | Validation PSNR | 90.34736 |
-| 3.   | Validation SSIM | 0.98269  |
+| 1.   | Validation MSE  | 5.92e-5  |
+| 2.   | Validation PSNR | 42.2755508  |
+| 3.   | Validation SSIM | 0.9829  |  
 
 #### **Generated Images vs Ground Truth**:
 ![1.png](images/1.png)
