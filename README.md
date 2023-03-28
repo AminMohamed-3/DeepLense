@@ -14,7 +14,7 @@ The Dataset consists of three classes, strong lensing images with no substructur
 The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1lJTy1PWsbkNAykuz6oRYMKkvjbqJKis-?usp=sharing)
 
 
-### **Model Weights**: [cnn_state_dict_model.pt](/weights/classification_model.pth)
+### **Model Weights**: [classification_model.pth](/weights/classification_model.pth)
 
 
 
@@ -75,3 +75,4 @@ The dataset comprises strong lensing images with no substructure at multiple res
 
 [^1]: [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
 [^2]: [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
+
