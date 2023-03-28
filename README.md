@@ -44,19 +44,24 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
 ### Trails
 
-1. Implemented a discriminator in the structure mentioned in the paper, and optimized the generator network with adverserial loss, but didn't find any significant improvments. not to mention the extended training time due to the need of optimizing the discrimintor.
+1. Implemented a discriminator in the structure mentioned in the paper, and optimized the generator network with **adversarial loss**, but didn’t find any significant improvements. Not to mention the extended training time due to the need of optimizing the discriminator.
 
-2. Implemented VGG-Content loss to capture perceptual similarity between images and penalize the network with the MSE loss between the embeddings of the upscaled image and its ground truth. also didn't find any significant improvement whilst the training time took longer due to the need of inferenceing a VGG-19 Network in every training step.
+2. Implemented **VGG-Content loss** to capture perceptual similarity between images and penalize the network with the MSE loss between the embeddings of the upscaled image and its ground truth. I also didn’t find any significant improvements, whilst the training time took longer due to the need of inferring a VGG-19 Network in every training step.
 
-3. Removed batch normalization following the findings of the follow up architecture "ESRGAN"[^2] that BN layers produce visiable artifacts in the upscaled image. and found significant improvements in the resulting upscaled images and corresponding PNSR and SSIM metrics.
+3. Removed batch normalization following the findings of the follow up architecture **“ESRGAN”**[^2] that BN layers produce visible artifacts in the upscaled image. and found significant improvements in the resulting upscaled images and corresponding PNSR and SSIM metrics.
 
-4. Increased the number of Residual Blocks, that resulted in a minor improvement with no real damage to the training time.
+4. Increased the number of **Residual Blocks**, that resulted in a minor improvement with no real damage to the training time.
 
-5. Implemented Learning Rate Scheduler that dcreased the LR by a factor of 0.1 if no improvements in validation loss occured within an Epoch. resulted in a minor improvment with no real damage to the training time.
+5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of 0.1 if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
 
 ### **Dataset**:
 The dataset comprises strong lensing images with no substructure at multiple resolutions: high-resolution (HR) and low-resolution (LR).
 
+### **Solution**:
+The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1808FO26tvAnXkkVM6XBidHiNHE73yiML?usp=sharing)
+
+
+### **Model Weights**: [superres.pth](/weights/superres.pth)
 
 ### **Results**:
 | S.No | Metric          | Value    |
