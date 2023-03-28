@@ -52,7 +52,7 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
 4. Changed the LeakyReLU activation function to **PReLU** activation function, which resulted in a minor improvement in the validation metrics.
 
-5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of 0.1 if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
+5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of **0.1** if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
 
 ### **Dataset**:
 The dataset comprises strong lensing images with no substructure at multiple resolutions: high-resolution (HR) and low-resolution (LR).
