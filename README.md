@@ -13,6 +13,14 @@ The Dataset consists of three classes, strong lensing images with no substructur
 ### **Solution**:
 The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1lJTy1PWsbkNAykuz6oRYMKkvjbqJKis-?usp=sharing)
 
+### **Augmentations**:
+
+1. Random Horizontal Flip
+2. Random Vertical Flip
+3. Random Rotation
+4. Center Crop
+
+I've used the previosly mentioned augmentations to double the size of the dataset, which resulted in significant improvments in the validation accuracy and AUC metrics.
 
 ### **Model Weights**: [classification_model.pth](/weights/classification_model.pth)
 
@@ -22,11 +30,11 @@ The notebook can be open on [GoogleColab](https://colab.research.google.com/driv
 
 | S.No | Metric              | Value  |
 | ---- | ------------------- | ------ |
-| 1.   | Validation Accuracy | 93.56% |
-| 2.   | Micro Average AUC   | 0.9884 |
-| 3.   | AUC (no)            | 0.9909 |
-| 4.   | AUC (sphere)        | 0.9820 |
-| 5.   | AUC (Vortex)        | 0.9913 |
+| 1.   | Validation Accuracy | 95.25% |
+| 2.   | Average AUC         | 0.9941 |
+| 3.   | AUC (no)            | 0.9934 |
+| 4.   | AUC (sphere)        | 0.9871 |
+| 5.   | AUC (Vortex)        | 0.9961 |
 
 #### **confusion matrix**:
 
