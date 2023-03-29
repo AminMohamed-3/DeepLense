@@ -38,11 +38,11 @@ I've used the previosly mentioned augmentations to double the size of the datase
 
 #### **confusion matrix**:
 
-<img src="images/confusion_matrix.png">
+<img src="images/confusion_matrix.jpg">
 
 #### **ROC Curve**:
 
-<img src="images/ROC_Curve.png">
+<img src="images/ROC_Curve.jpg">
 
 <br>
 
