@@ -50,7 +50,7 @@ I've used the previosly mentioned augmentations to double the size of the datase
 
 An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
-### Trails
+### Trials
 
 1. Implemented a discriminator in the structure mentioned in the paper, and optimized the generator network with **adversarial loss**, but foun that it decreased the preformance and produced a weird pixelation effect. Not to mention the extended training time due to the need of optimizing the discriminator.
 
