@@ -37,7 +37,7 @@ I've used the previosly mentioned augmentations to double the size of the datase
 | 4.   | AUC (sphere)        | 0.99   |
 | 5.   | AUC (Vortex)        | 0.9967 |
 
-#### **confusion matrix**:
+#### **Confusion Matrix**:
 
 <img src="images/confusion_matrix.png">
 
