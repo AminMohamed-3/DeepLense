@@ -30,19 +30,20 @@ I've used the previosly mentioned augmentations to double the size of the datase
 
 | S.No | Metric              | Value  |
 | ---- | ------------------- | ------ |
-| 1.   | Validation Accuracy | 95.25% |
-| 2.   | Average AUC         | 0.9941 |
-| 3.   | AUC (no)            | 0.9934 |
-| 4.   | AUC (sphere)        | 0.9871 |
-| 5.   | AUC (Vortex)        | 0.9961 |
+| 1.   | Validation Accuracy | 95.93% |
+| 2.   | macro-average AUC   | 0.99378|
+| 2.   | micro-Average AUC   | 0.9952 |
+| 3.   | AUC (no)            | 0.9937 |
+| 4.   | AUC (sphere)        | 0.99   |
+| 5.   | AUC (Vortex)        | 0.9967 |
 
 #### **confusion matrix**:
 
-<img src="images/confusion_matrix.jpg">
+<img src="images/confusion_matrix.png">
 
 #### **ROC Curve**:
 
-<img src="images/ROC_Curve.jpg">
+<img src="images/ROC_Curve.png">
 
 <br>
 
@@ -58,7 +59,7 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
 3. Removed batch normalization following the findings of the follow up architecture **“ESRGAN”**[^2] that BN layers produce visible artifacts in the upscaled image. And found improvements in the resulting upscaled images and corresponding PNSR and SSIM metrics.
 
-4. Changed the LeakyReLU activation function to **PReLU** activation function, which resulted in a minor improvement in the validation metrics.
+4. Changed the ReLU activation function to **PReLU** activation function, which resulted in a minor improvement in the validation metrics.
 
 5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of **0.1** if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
 
