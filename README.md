@@ -63,6 +63,15 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 
 5. Implemented **Learning Rate Scheduler** that decreased the LR by a factor of **0.1** if no improvements in validation loss occurred within an Epoch. resulted in a minor improvment with no real damage to the training time.
 
+6. Switched the **Pixel Shuffle** layer with **Trasnposed Convolution** layer, which didn't result in any improvements.
+
+7. switched the **Pixel Shuffle** layer with an **Upsample** layer followed by a convolution, which didn't result in any improvements.
+
+8. Decreased the number of **Residual Blocks** from 16 to 1, which resulted in a minor improvement in the validation metrics, and a faster convergence.
+
+9. Increased the number of **channels** across the network from 64 to 128, which decreased the validation metrics.
+
+
 ### **Dataset**:
 The dataset comprises strong lensing images with no substructure at multiple resolutions: high-resolution (HR) and low-resolution (LR).
 
@@ -75,9 +84,10 @@ The notebook can be open on [GoogleColab](https://colab.research.google.com/driv
 ### **Results**:
 | S.No | Metric          | Value    |
 | ---- | --------------- | -------- |
-| 1.   | Validation MSE  | 5.92e-5  |
-| 2.   | Validation PSNR | 42.2755508  |
-| 3.   | Validation SSIM | 0.9829  |  
+| 1.   | Validation MSE  | 5.859e-5 |
+| 2.   | Validation PSNR | 42.3233  |
+| 3.   | Validation SSIM | 0.98295  |  
+
 
 #### **Generated Images vs Ground Truth**:
 ![1.png](images/1.png)
@@ -85,6 +95,9 @@ The notebook can be open on [GoogleColab](https://colab.research.google.com/driv
 ![3.png](images/3.png)
 ![4.png](images/4.png)
 ## __Citation__
+
+If you find this repo useful, please consider citing the following paper:
+
 
 
 [^1]: [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
