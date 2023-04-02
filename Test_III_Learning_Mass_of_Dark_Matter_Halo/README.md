@@ -23,8 +23,8 @@ I've used the previosly mentioned augmentations to regularize the dataset, which
 
 | S.No | Metric              | Value  |
 | ---- | ------------------- | ------ |
-| 1.   | Training MSE       | 6.005e-5 |
-| 2.   | Testing MSE        | 6.147e-4 |
+| 1.   | Training MSE       | 6.005e-6 |
+| 2.   | Testing MSE        | 6.147e-5 |
 
 ### **__Predicted vs Actual Mass__**:
 
