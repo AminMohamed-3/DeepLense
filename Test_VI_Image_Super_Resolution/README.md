@@ -27,7 +27,7 @@ An Implementation of SRResNet using PyTorch for super-resolution of images.[^1]
 The dataset comprises strong lensing images with no substructure at multiple resolutions: high-resolution (HR) and low-resolution (LR).
 
 ### **Solution**:
-The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1UOhPnVv-YDzBvhI5va-PipOj3BV9LHMT?usp=sharing)
+The notebook can be open on [GoogleColab](https://colab.research.google.com/drive/1b38ja4JHk-22adHfSKFt8r4oRWh0Vpyx?usp=sharing)
 
 
 ### **Model Weights**: [superres.pth](/weights/superres.pth)
