@@ -19,9 +19,10 @@ I've used the previosly mentioned augmentations to double the size of the datase
 
 ### **Model Weights**: [classification_model.pth](/weights/classification_model.pth)
 
+<br>
 
 
-### **Results**:
+## **Results**:
 
 | S.No | Metric              | Value  |
 | ---- | ------------------- | ------ |
