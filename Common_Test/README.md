@@ -33,10 +33,6 @@ I've used the previosly mentioned augmentations to double the size of the datase
 | 5.   | AUC (Vortex)        | 0.9967 |
 
 #### **Confusion Matrix**:
-#refrence image named confusion matrix in images folder
-
-
-
 
 <img src="images/confusion_matrix.png">
 
