@@ -1,4 +1,4 @@
-# __GSoC-2023__
+# __DeepLense__
 
 This repo provides solutions used for the application process for GSoC DeepLense 2023.
 <br>
@@ -6,7 +6,7 @@ This repo provides solutions used for the application process for GSoC DeepLense
 **Project Link**: [Superresolution for Strong Gravitational Lensing](https://ml4sci.org/gsoc/2023/proposal_DEEPLENSE6.html)
  <br>
 
-# __The solutions are arranged in the following order :__ <br>
+# __The projects are arranged in the following order :__ <br>
 
 add link to each subdirectory <br>
 1. [**Multi-Class Classification**](https://github.com/AminMohamed-3/GSoC_Tests_2023/tree/master/Common_Test) <br>
